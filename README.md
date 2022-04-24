@@ -12,14 +12,15 @@ Ultrasonic cleaner recommended. Furthermore, there are SMT caps on the display m
 the case - it can be serviced in place. I think it's 7 or 8 2.2uF x 50V caps, and one 10uF x 16V, same kind as you'd find in a Sega Game Gear. Skip the vinegar, here
 you just use flux, isopropyl and qtips.
 
+The CMOS battery (which also works as as suspend battery) seems to be 2.4 or 3.6V on one end, and go up to 6V on the other. Mine was too far gone to determine. Pins seem to be [VSS VCMOS TEMP VSUSPEND]. Try feeding it 3V from a CR2032 (use a series diode). VSS is the pin closest to the parallel port.
+
 2) How to open: remove the two screws on the port cover, slide that off. Remove the 4 screws on the battery side. Slightly open the ports side, tug the backlight cable
 from the inverter. Now remove the top cover. Undo the screw close to the battery contacts, and then the one midway into the board. That releases the digitizer
 daughterboard, and makes you less likely to wreck the cable. Flip the board up, undo the catches on the display and LED cables, and the board should come out.
 You can now carry out the remediations described above.
 
 3) Bodges: The DTR-1 is a piece of crap. Not that it's poorly designed or anything, it was just conceived in an era where product development was clunky and costly, and
-it simply didn't sell enough to iterate until it was a perfect design. As such, you'll find several layout fixes inside, depending on your board revision. (I know of 3,
-more may exist)
+it simply didn't sell enough to iterate until it was a perfect design. As such, you'll find several layout fixes inside, depending on your board revision. (I know of 3, more may exist)
 THOSE ARE NOT DOCUMENTED, SCHEMATICS DON'T EXIST, NOT EVEN PINOUTS FOR THE CORE LOGIC EXIST. DON'T MESS WITH ANY OF IT. I BROKE A BODGE AND I'M LUCKY MY UNIT STILL WORKS.
 
 4) Peripherals and expansion: any DTR-1 can be expanded to 6MB. If you're lucky yours is decked out. If you're less lucky you have a 2MB expansion which can have extra
@@ -36,5 +37,7 @@ As a bonus, the adaptor allows for the connection of external IDE/ATA devices. P
 someone has bothered to document the pinout. Since my own DTR-1 is a bit cruddy and corroded, I couldn't verify that it will work, but it should. Sorry about the
 50-way connector alone costing 20 bucks - Dauphin picked it, not me.
 
-Since there are no docs, chance of me copying the LAN expansion, or developing anything else, range from slim to none. Drop me a line if you have DTR-1 bits you'd be
-willing to let go of. I would greatly appreciate being able to create more for this machine.
+The digitizer is a Kurta/Mutoh one that uses a stupid active pen. Try a (nowadays rare) Compaq tc1000 pen. The tc1100 one doesn't take a battery and therefore doesn't
+work with the DTR-1. Anything that works on a Fujitsu Stylistic 500/1000...and 2300? should also work here.
+
+Since there are no docs, chance of me copying the LAN expansion, or developing anything else, range from slim to none. Drop me a line if you have DTR-1 bits/docs you'd be willing to let go of. I would greatly appreciate being able to create more for this computer. If your machine is wrecked, you need to know what component goes where, you screwed up, anything DTR-1 related, ping me and I'll do my best to help you out.
